@@ -36,15 +36,80 @@ function Ninjas (name, age, height, color) {
   this.coin = () => {
     //audio
     coinSfx.play();
+    const button = document.querySelector('#btnCoin');
 
+button.style.setproperty('background-color', '#2ecc71');
+button.style.setproperty('border-color', '#2ecc71');
+button.style.setproperty('color', 'var(--bg-color)');
 
+//coin effect
+  const coinImg = document.createElement('img');
+    coinImg.setAttribute('src', 'imgs/coin.png');
+    coinImg.setAttribute('id', 'coin-img');
+    coinImg.style.transform = 'translate(-50%, calc(-100% - ' + ninja.height + 'px)';
+    container.appendChild(coingImg);
 
+    $('#coin-img').animate({ top: '60%', opacity: 1 }, 250);
+    $('#coin-img').animate({ top: '70%', opacity: 0 }, 250, () => {
+    $('#coin-img').remove();
+     button.style.setProperty('background-color', 'transparent');
+     button.style.setProperty('border-color', 'var(--accent-color)');
+     button.style.setProperty('color', 'var(--accent-color');
+    });
+  };
+  this.pipe = () => {
+    pipeSfx.play();
+  };
+  this.powerUp = () => {
+    powerUpSfx.play();
+  };
+}
+const promptUser = () => {
+  let name = prompt('Pick a name:') || 'Ninja';
+  let age;
+  let height;
+  let color;
 
+this.getAge = () => {
+  age = pr,pt('Pick an age:') || '18';
+age = parseInt(age);
+  if (isNaN(age)) {
+    this.getAge();
+  } else {
+    return;
+  }
+};
 
+  this.getHeight = () => {
+    height = prompt('Pick height: 1, 2, 3, 4') || 4;
+    height = parseInt(height);
+    if (height === 1 || height === 2 || height === 3 || height === 4) {
+      height = height * 64;
+      return;
+    } else {
+      this.getHeight();
+    }
+  };
 
-
-
-
+this.getColor = () => {
+  color = prompt ('Choose color: Red Blue Green') || 'red';
+  color = color.toLowercase();
+  if (color === 'red' || color === 'blue' || color === 'green') {
+    return;
+  } else {
+    this.getColor();
+  }
+};
+  this.appendImg = () => {
+    img = document.createElement('img');
+    let size = 'width.' + height + 'px;height:' + height + 'px;';
+    if (color === 'blue') {
+      img.setAttribute('src', 'imgs/ninja1.png');
+      img.setAttribute('style', size);
+      container.appendChild(img);
+    } else if (color === 'green') {
+      img
+                         
 
 
 
