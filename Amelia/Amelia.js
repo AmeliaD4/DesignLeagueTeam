@@ -15,7 +15,7 @@ const powerUpSfx = new Sfx('sfx/Mario Powerup.wav');
 const container = document.querySelector('.content');
 let ninja;
 
-function Sfxx(src) {
+function Sfx(src) {
   this.sound = document.createElement('audio');
   this.sound.src = src;
   this.sound.setAttribute('preload', 'auto');
@@ -119,10 +119,10 @@ this.getColor = () => {
   };
 this.changeBtns = () => {
   const btn = dcument.querySelector('button');
-  const btnContainr = document.querySelector('.btns-container');
+  const btnContainer = document.querySelector('.btns-container');
   btnContainer.removeChild(btn);
   btnContainer.innerHTML = 
-    "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <buttn onclick='ninja.pipe()' id='btnPipe>Pipe</button> \n <button onclick='ninja.powerUp()' id='btnPowerUp>Power Up</button>";
+    "<button onclick='ninja.coin()' id='btnCoin'>Coin</button> \n <button onclick='ninja.pipe()' id='btnPipe>Pipe</button> \n <button onclick='ninja.powerUp()' id='btnPowerUp>Power Up</button>";
 const newBtns = document.querySelectorAll('button');
   for (let i = 0; i < newBtns.length; i++) {
     newBtns[i].style.setproperty('margin-left', '1.5rem');
