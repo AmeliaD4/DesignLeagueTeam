@@ -107,7 +107,7 @@ this.getColor = () => {
     }
   };
 this.changeBtns = () => {
-  const btn = dcument.querySelector('button');
+  const btn = document.querySelector('button');
   const btnContainer = document.querySelector('.btns-container');
   btnContainer.removeChild(btn);
   btnContainer.innerHTML = 
