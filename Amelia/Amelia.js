@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     loader.setAttribute('style', 'opacity:0;');
   }, 500);
   setTimeout(() => {
-    loader.patentNode.removeChild(loader);
+    loader.patentNode.removeChild('loader');
     document.body.style.overflow = 'initial';
   }, 1000);
 });
