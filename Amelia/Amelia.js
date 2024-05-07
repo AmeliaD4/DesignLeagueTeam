@@ -60,7 +60,7 @@ const promptUser = () => {
   let color;
 
 this.getAge = () => {
-  age = pr,pt('Pick an age:') || '18';
+  age = prompt('Pick an age:') || '18';
 age = parseInt(age);
   if (isNaN(age)) {
     this.getAge();
