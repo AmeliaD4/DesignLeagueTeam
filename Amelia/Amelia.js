@@ -82,7 +82,7 @@ age = parseInt(age);
 
 this.getColor = () => {
   color = prompt ('Choose color: Red Blue Green') || 'red';
-  color = color.toLowercase();
+  color = color.toLowerCase();
   if (color === 'red' || color === 'blue' || color === 'green') {
     return;
   } else {
