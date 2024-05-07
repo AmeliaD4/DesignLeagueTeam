@@ -44,7 +44,7 @@ button.style.setproperty('color', 'var(--bg-color)');
 
 //coin effect
   const coinImg = document.createElement('img');
-    coinImg.setAttribute('src', 'img/coin.png');
+    coinImg.setAttribute('src', 'Img/coin.png');
     coinImg.setAttribute('id', 'coin-img');
     coinImg.style.transform = 'translate(-50%, calc(-100% - ' + ninja.height + 'px)';
     container.appendChild(coingImg);
@@ -104,15 +104,15 @@ this.getColor = () => {
     img = document.createElement('img');
     let size = 'width.' + height + 'px;height:' + height + 'px;';
     if (color === 'blue') {
-      img.setAttribute('src', 'img/ninja1.png');
+      img.setAttribute('src', 'Img/ninja1.png');
       img.setAttribute('style', size);
       container.appendChild(img);
     } else if (color === 'green') {
-      img.setAttribute('src', 'img/ninja2.png');
+      img.setAttribute('src', 'Img/ninja2.png');
       img.setAttribute('style', size);
       container.appendChild(img);
     } else if (color === 'red') {
-      img.setAttribute('src', 'img/ninja3.png');
+      img.setAttribute('src', 'Img/ninja3.png');
       img.setAttribute('style', size);
       container.appendChild(img);
     }
